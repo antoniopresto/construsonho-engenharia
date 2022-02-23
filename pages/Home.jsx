@@ -16,6 +16,7 @@ export default function Home() {
 
     return (
         <Layout>
+            <Topmenu/>
             <Content>
                 <Banner/>
                 <Company/>

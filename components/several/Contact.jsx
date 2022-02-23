@@ -1,7 +1,8 @@
 import React from "react";
 import { Button, Col, Form, Input, Row, Select } from "antd";
-import { Option } from "antd/lib/select";
 import Titlesection from "../generics/Titlesection";
+
+const { Option } = Select;
 
 export default function Contact() {
   const [form] = Form.useForm();
@@ -111,7 +112,7 @@ export default function Contact() {
               >
                 <Input.TextArea />
               </Form.Item>
-              <Form.Item ls={{ offset: 8}}>
+              <Form.Item ls={{ offset: 8 }}>
                 <Button
                   type="primary"
                   htmlType="submit"

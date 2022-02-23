@@ -4,7 +4,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -19,6 +19,7 @@ a {
 figure {
   text-align: center;
 }
+
 // variables
 @width0: 14rem;
 @height0: 18rem;
@@ -42,6 +43,13 @@ figure {
   margin: 10px;
 }
 
+.navmenu {
+  position: fixed;
+  z-index: 1;
+  height: 6em;
+  width: 100%;
+}
+
 //plano de fundo
 .bg__container {
   background-attachment: scroll;
@@ -54,11 +62,13 @@ figure {
     background-color: white;
     background-position-x: -50px;
   }
+
   &.bg__gray {
     background-image: url(/bg_company.png);
     background-position: right;
     background-color: @cinza;
   }
+
   &.bg__black {
     background-image: url(/bg_black.png);
     background-color: @preto;
@@ -72,6 +82,7 @@ figure {
   letter-spacing: "0.04em";
   font-family: @titlebanner;
 }
+
 .titlesection {
   font-family: @titlesection;
   font-size: @titlesize;
@@ -80,6 +91,7 @@ figure {
   letter-spacing: 5px;
   text-transform: capitalize;
 }
+
 .spansection {
   font-family: @spansection;
   color: @laranja;
@@ -88,6 +100,7 @@ figure {
   letter-spacing: 0.5em;
   text-transform: uppercase;
 }
+
 .subtitlesection {
   font-family: @titlesection;
   color: @preto;
@@ -98,15 +111,18 @@ figure {
   font-weight: bold;
   text-transform: capitalize;
 }
+
 .outhertexts {
   font-family: @texts;
   font-size: @textsizes;
   text-align: justify;
   margin: 0.6rem;
 }
+
 .underlaine {
   border-bottom: solid 2px @laranja;
 }
+
 .underlaine__card {
   border: @laranja 1px solid;
   width: 80px;
@@ -116,9 +132,9 @@ figure {
 //NAVBAR
 @media (min-width: 750px) {
   .menubtn {
-    margin-top: 20px;
-    display: none;
+    display: none !important;
   }
+
   .bigmenu {
     margin-top: 10px;
     right: 10px;
@@ -127,13 +143,12 @@ figure {
 
 @media (max-width: 750px) {
   .bigmenu {
-    margin-top: 10px;
-    display: none;
+    display: none !important;
   }
+
   .menubtn {
-    position: absolute;
+    //position: absolute!important;
     margin-top: 20px;
-    right: 20px;
   }
 }
 
@@ -144,15 +159,19 @@ figure {
   max-width: @width0;
   height: @height0;
   /* define a velocidade da transição */
+
   .flipper {
     transition: 0.6s;
     transform-style: preserve-3d;
     position: relative;
     /* vira os containers frente e verso quando o mouse passa em cima */
+
     &:hover {
       transform: rotateY(180deg);
     }
+
     /* esconde o verso durante a animação */
+
     .front,
     .back {
       max-width: @width0;
@@ -162,13 +181,17 @@ figure {
       top: 0;
       left: 0;
     }
+
     /* frente posicionada sobre o verso */
+
     .front {
       z-index: 2;
       width: @width0;
       background-size: contain;
     }
+
     /* verso inicialmente escondido */
+
     .back {
       transform: rotateY(180deg);
       display: flex;
@@ -187,6 +210,7 @@ figure {
   background-color: black;
   text-align: center;
   padding: 5px;
+
   span {
     font-family: @texts;
     letter-spacing: 0.5px;
