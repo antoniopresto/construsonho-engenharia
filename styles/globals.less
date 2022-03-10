@@ -134,6 +134,70 @@ figure {
   background-color: white!important;
 }
 
+//CARDS
+.container_cards {
+  width: 240px;
+  height: 340px;
+  cursor: pointer;
+}
+
+.overlay {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: rgba(221, 220, 220, 0.9);
+  opacity: 0;
+  transition: all 0.5s;
+  flex-direction: column;
+  justify-content: end;
+}
+.items {
+  padding: 15px;
+  color: @preto;
+}
+.head {
+  transform: translateY(40px);
+  transition: all 0.6s;
+}
+.head hr {
+  display: block;
+  width: 0;
+  border: none;
+  border-bottom: solid 2px @laranja;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  transition: all 0.4s;
+}
+.container_cards:hover .overlay {
+  opacity: 1;
+}
+.container_cards:hover .overlay .head {
+  transform: translateY(0px);
+}
+.container_cards:hover .overlay hr {
+  width: 75px;
+  transition-delay: 0.3s;
+}
+
+//CONTATO
+.login-form-button {
+  width: 80%;
+}
+
+//rodape
+.rodape {
+  background-color: black;
+  text-align: center;
+  padding: 5px;
+
+  span {
+    font-family: @texts;
+    letter-spacing: 0.5px;
+  }
+}
+
 @media (min-width: 750px) {
   .menubtn {
     display: none !important;
@@ -170,69 +234,9 @@ figure {
   .spansection{
     font-size: 0.7em;
   }
-}
 
-//CARDS
-/* O container geral define a perspectiva */
-.flip-container {
-  font-family: @texts;
-  max-width: @width0;
-  height: @height0;
-  /* define a velocidade da transição */
-
-  .flipper {
-    transition: 0.6s;
-    transform-style: preserve-3d;
-    position: relative;
-    /* vira os containers frente e verso quando o mouse passa em cima */
-
-    &:hover {
-      transform: rotateY(180deg);
-    }
-
-    /* esconde o verso durante a animação */
-
-    .front,
-    .back {
-      max-width: @width0;
-      height: @height0;
-      backface-visibility: hidden;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    /* frente posicionada sobre o verso */
-
-    .front {
-      z-index: 2;
-      width: @width0;
-      background-size: contain;
-    }
-
-    /* verso inicialmente escondido */
-
-    .back {
-      transform: rotateY(180deg);
-      display: flex;
-      flex-flow: column-reverse;
-    }
-  }
-}
-
-//CONTATO
-.login-form-button {
-  width: 80%;
-}
-
-//rodape
-.rodape {
-  background-color: black;
-  text-align: center;
-  padding: 5px;
-
-  span {
-    font-family: @texts;
-    letter-spacing: 0.5px;
+  //cards
+  .container_cards{
+    width: 200px;
   }
 }
