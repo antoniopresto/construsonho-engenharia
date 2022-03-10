@@ -5,7 +5,7 @@ export default function Cards(props) {
   const { subtitulo, linkimg, description } = props;
   return (
     <>
-      <Col flex="1 1 215px" xl={{ offset: 2 }}>
+      <Col flex="1 1 200px" xl={{ offset: 2 }}>
         <div className="flip-container">
           <div className="flipper">
             <div

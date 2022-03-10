@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Content } from "antd/lib/layout/layout";
 import { Layout } from "antd";
 import Home from "./Home";
+import App from "next/app";
 
 export default function Index() {
   return (
@@ -20,7 +21,7 @@ export default function Index() {
           />
         </Head>
         <Content>
-          <Home/>
+          <App Component={Home}/>
         </Content>
       </Layout>
     </>

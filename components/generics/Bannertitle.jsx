@@ -1,18 +1,8 @@
 import React from "react";
-import {Row, Col, PageHeader} from "antd";
+import {Row, Col, Breadcrumb} from "antd";
 
 export default function Bannertitle(props) {
-    const {title} = props;
-    const routes = [
-        {
-            path: "index",
-            breadcrumbName: "Home",
-        },
-        {
-            path: "about",
-            breadcrumbName: "Sobre",
-        },
-    ];
+    const {title, breadcrumbName} = props;
 
     return (
         <div
@@ -27,10 +17,15 @@ export default function Bannertitle(props) {
                     </p>
 
                     <div className="underlaine__card"></div>
-                    <PageHeader
-                        breadcrumb={{routes}}
-                        //style={{ color: "#F37B20" }}
-                    />
+
+                    <Breadcrumb style={{padding: "20px"}}>
+                        <Breadcrumb.Item>
+                            <a href="/">Home</a>
+                        </Breadcrumb.Item>
+                        <Breadcrumb.Item>
+                            {breadcrumbName}
+                        </Breadcrumb.Item>
+                    </Breadcrumb>
                 </Col>
                 <Col flex="1 1 300px">
                     <figure>

@@ -39,15 +39,14 @@ figure {
 @preto: #252626;
 @cinza: #fafafa;
 
-.container__wrapper {
-  margin: 10px;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 850px;
 }
 
-.navmenu {
-  position: fixed;
-  z-index: 1;
-  height: 6em;
-  width: 100%;
+.container__wrapper {
+  padding: 10px;
 }
 
 //plano de fundo
@@ -55,7 +54,7 @@ figure {
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 5% 10%;
+  padding: 30px;
 
   &.bg__white {
     background-image: url(/bg_banner.png);
@@ -130,6 +129,11 @@ figure {
 }
 
 //NAVBAR
+.navmenu {
+  padding: 2% 5%!important;
+  background-color: white!important;
+}
+
 @media (min-width: 750px) {
   .menubtn {
     display: none !important;
@@ -138,6 +142,8 @@ figure {
   .bigmenu {
     margin-top: 10px;
     right: 10px;
+    justify-content: end;
+    text-align: end;
   }
 }
 
@@ -147,8 +153,22 @@ figure {
   }
 
   .menubtn {
-    //position: absolute!important;
     margin-top: 20px;
+  }
+
+  .ant-drawer-content-wrapper{
+    width: 280px!important;
+  }
+
+  //banner
+  .titleBanner{
+    font-size: 2.5em;
+  }
+  .titlesection{
+    font-size: 2rem;
+  }
+  .spansection{
+    font-size: 0.7em;
   }
 }
 

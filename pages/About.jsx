@@ -8,6 +8,7 @@ import History from "../components/History";
 export default function About() {
     const valueTitle = {
         title: "A Empresa",
+        breadcrumbName: "Sobre"
     };
 
     return (
