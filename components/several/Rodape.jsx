@@ -20,11 +20,11 @@ export default function Rodape() {
     ];
 
     return (
-        <Layout>
+        <Layout className="rodape">
             <Footer>
                 <div className="container">
                     <Row>
-                        <Col flex="0 1 150px">
+                        <Col flex="0 1 140px" className="rodape_figure">
                             <figure>
                                 <img
                                     src="./logo.png"
@@ -33,7 +33,7 @@ export default function Rodape() {
                                 />
                             </figure>
                         </Col>
-                        <Col flex="1 2 250px">
+                        <Col flex="1 2 auto">
                             <Subtitlesection {...valueSubtitle[0]} />
                             <div className="outhertexts">
                                 <p>Av. Celeste, 310, carapicuiba</p>
@@ -66,7 +66,7 @@ export default function Rodape() {
                             </Button>
                         </Col>
 
-                        <Col flex="1 1 100px" align={"center"}>
+                        <Col flex="1 1 auto" align={"center"}>
                             {/*<BackTop style={{bottom: "4.5em", right: "2em"}}>*/}
                             <figure style={{width: "5rem"}}>
                                 <img
@@ -75,12 +75,12 @@ export default function Rodape() {
                                     style={{width: "100%"}}
                                 />
                             </figure>
-                            {/*</BackTop>*/}
+                            {/*<BackTop/>*/}
                         </Col>
                     </Row>
                 </div>
             </Footer>
-            <div className="rodape">
+            <div className="rodape_name">
               <span className="spansection">
                 Engenheiro Civil: Wedson dos Santos - CREA/SP: 5070620780
               </span>

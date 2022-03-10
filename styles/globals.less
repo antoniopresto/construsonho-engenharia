@@ -18,6 +18,7 @@ a {
 
 figure {
   text-align: center;
+  align-self: center;
 }
 
 // variables
@@ -54,7 +55,7 @@ figure {
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 30px;
+  padding: 50px 30px;
 
   &.bg__white {
     background-image: url(/bg_banner.png);
@@ -187,7 +188,14 @@ figure {
 }
 
 //rodape
-.rodape {
+
+.rodape_figure{
+  text-align: center;
+  align-self: center;
+  align-items: center;
+}
+
+.rodape_name {
   background-color: black;
   text-align: center;
   padding: 5px;
@@ -208,6 +216,7 @@ figure {
     right: 10px;
     justify-content: end;
     text-align: end;
+    border-bottom: none;
   }
 }
 
