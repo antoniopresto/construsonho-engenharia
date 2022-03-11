@@ -67,15 +67,13 @@ export default function Rodape() {
                         </Col>
 
                         <Col flex="1 1 auto" align={"center"}>
-                            {/*<BackTop style={{bottom: "4.5em", right: "2em"}}>*/}
-                            <figure style={{width: "5rem"}}>
+                            <figure style={{width: "5rem"}} onClick={() => window.scrollTo(0,0)}>
                                 <img
                                     src="./backtop.png"
                                     alt="voltar ao inicio da página"
                                     style={{width: "100%"}}
                                 />
                             </figure>
-                            {/*<BackTop/>*/}
                         </Col>
                     </Row>
                 </div>
