@@ -65,7 +65,7 @@ export default function Topmenu() {
                             className="bigmenu"
                             mode="horizontal"
                             overflowedIndicator={<MenuOutlined/>}
-                            style={{lineHeight: "64px", fontFamily: "'Merriweather', serif"}}
+                            style={{lineHeight: "64px", fontFamily: "Montserrat, sans-serif"}}
                         >
                             <Menu.Item key="home">
                                 <Link href="/Home"> Home </Link>

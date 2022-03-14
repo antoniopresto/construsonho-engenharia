@@ -1,6 +1,6 @@
 import React from "react";
-import {Row, Col, Button, BackTop, Layout, Menu} from "antd";
-import {Footer, Header} from "antd/lib/layout/layout";
+import {Row, Col, Button, Layout } from "antd";
+import {Footer } from "antd/lib/layout/layout";
 import {
     InstagramOutlined,
     FacebookOutlined,
@@ -43,13 +43,13 @@ export default function Rodape() {
                         </Col>
                         <Col flex="0 1 150px">
                             <Subtitlesection {...valueSubtitle[2]} />
-                            <Button type="text" href="/" icon={<InstagramOutlined/>}>
+                            <Button type="text" href="https://www.instagram.com/engenhariaconstrusonhos/" icon={<InstagramOutlined/>}>
                                 Instagram
                             </Button>
-                            <Button type="text" href="/" icon={<FacebookOutlined/>}>
+                            <Button type="text" href="https://www.facebook.com/engenhariaconstrusonhos-108246148003444" icon={<FacebookOutlined/>}>
                                 Facebook
                             </Button>
-                            <Button type="text" href="/" icon={<WhatsAppOutlined/>}>
+                            <Button type="text" href="https://wa.me/5511950711314" icon={<WhatsAppOutlined/>}>
                                 WhatsApp
                             </Button>
                         </Col>
