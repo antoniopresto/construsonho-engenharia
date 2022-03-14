@@ -55,9 +55,9 @@ export default function Topmenu() {
                                 <Button type="text" href="/About">
                                     Sobre
                                 </Button>
-                                <Button type="text" href="/Gallery">
-                                    Galeria
-                                </Button>
+                                {/*<Button type="text" href="/Gallery">*/}
+                                {/*    Galeria*/}
+                                {/*</Button>*/}
                             </div>
                         </Drawer>
                     </>
@@ -73,9 +73,9 @@ export default function Topmenu() {
                             <Menu.Item key="about">
                                 <Link href="/About"> Sobre </Link>
                             </Menu.Item>
-                            <Menu.Item key="gallery">
-                                <Link href="/Gallery"> Galeria </Link>
-                            </Menu.Item>
+                            {/*<Menu.Item key="gallery">*/}
+                            {/*    <Link href="/Gallery"> Galeria </Link>*/}
+                            {/*</Menu.Item>*/}
                         </Menu>
                     </Col>
                 </Row>

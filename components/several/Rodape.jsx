@@ -61,9 +61,9 @@ export default function Rodape() {
                             <Button type="text" href="/About" icon={<BankOutlined/>}>
                                 Sobre
                             </Button>
-                            <Button type="text" href="/Gallery" icon={<CameraOutlined/>}>
-                                Galeria
-                            </Button>
+                            {/*<Button type="text" href="/Gallery" icon={<CameraOutlined/>}>*/}
+                            {/*    Galeria*/}
+                            {/*</Button>*/}
                         </Col>
 
                         <Col flex="1 1 auto" align={"center"}>

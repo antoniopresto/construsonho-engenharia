@@ -11,7 +11,7 @@ export default function Home() {
             <Banner/>
             <Company/>
             <Services/>
-            <Contact/>
+            {/*<Contact/>*/}
         </>
     );
 }
