@@ -163,10 +163,14 @@ figure {
     letter-spacing: 1.5px;
     text-align: start;
 
-    li:before {
-      content: "★";
-      padding: 2px;
-      color: @laranja;
+    li {
+      user-select: none;
+
+      &:before {
+        content: "★";
+        padding: 2px;
+        color: @laranja;
+      }
     }
   }
 }
@@ -268,7 +272,7 @@ figure {
   .container_cards {
     width: 220px;
 
-    .items ul{
+    .items ul {
       letter-spacing: 0.8px;
     }
   }
