@@ -1,5 +1,4 @@
 
-
 body {
   padding: 0;
   margin: 0;
@@ -130,8 +129,8 @@ figure {
 
 //NAVBAR
 .navmenu {
-  padding: 2% 5%!important;
-  background-color: white!important;
+  padding: 2% 5% !important;
+  background-color: white !important;
 }
 
 //CARDS
@@ -152,14 +151,31 @@ figure {
   flex-direction: column;
   justify-content: end;
 }
+
 .items {
   padding: 15px;
   color: @preto;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    letter-spacing: 1.5px;
+    text-align: start;
+
+    li:before {
+      content: "★";
+      padding: 2px;
+      color: @laranja;
+    }
+  }
 }
+
 .head {
   transform: translateY(40px);
   transition: all 0.6s;
 }
+
 .head hr {
   display: block;
   width: 0;
@@ -170,13 +186,16 @@ figure {
   left: 20px;
   transition: all 0.4s;
 }
-.container_cards:hover .overlay {
+
+.container_cards:hover .overlay, .container_cards:focus .overlay {
   opacity: 1;
 }
-.container_cards:hover .overlay .head {
+
+.container_cards:hover .overlay .head, .container_cards:focus .overlay .head {
   transform: translateY(0px);
 }
-.container_cards:hover .overlay hr {
+
+.container_cards:hover .overlay hr, .container_cards:focus .overlay hr {
   width: 75px;
   transition-delay: 0.3s;
 }
@@ -188,7 +207,7 @@ figure {
 
 //rodape
 
-.rodape_figure{
+.rodape_figure {
   text-align: center;
   align-self: center;
   align-items: center;
@@ -228,23 +247,25 @@ figure {
     margin-top: 20px;
   }
 
-  .ant-drawer-content-wrapper{
-    width: 280px!important;
+  .ant-drawer-content-wrapper {
+    width: 280px !important;
   }
 
   //banner
-  .titleBanner{
+  .titleBanner {
     font-size: 2.5em;
   }
-  .titlesection{
+
+  .titlesection {
     font-size: 2rem;
   }
-  .spansection{
+
+  .spansection {
     font-size: 0.7em;
   }
 
   //cards
-  .container_cards{
+  .container_cards {
     width: 200px;
   }
 }
