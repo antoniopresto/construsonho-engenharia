@@ -15,7 +15,7 @@ export default function About() {
             <Bannertitle {...valueTitle} />
             <Goals/>
             <History/>
-            {/*<Contact/>*/}
+            <Contact/>
         </>
     );
 }

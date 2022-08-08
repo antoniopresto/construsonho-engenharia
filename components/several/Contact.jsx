@@ -1,36 +1,11 @@
 import React from "react";
 import {Button, Col, Form, Input, Row, Select} from "antd";
 import Titlesection from "../generics/Titlesection";
+
 const {Option} = Select;
 
 export default function Contact() {
     const [form] = Form.useForm();
-    const [formLayout, setFormLayout] = React.useState("horizontal");
-    const formItemLayout =
-        formLayout === "horizontal"
-            ? {
-                labelCol: {
-                    span: 5,
-                },
-                wrapperCol: {
-                    span: 14,
-                },
-            }
-            : null;
-
-    const onFormLayoutChange = ({layout}) => {
-        setFormLayout(layout);
-    };
-    const validateMessages = {
-        required: "${label} is required!",
-        types: {
-            email: "${label} is not a valid email!",
-            number: "${label} is not a valid number!",
-        },
-        number: {
-            range: "${label} must be between ${min} and ${max}",
-        },
-    };
 
     const valueTitle = {
         text: "CONTATE NOS",
@@ -38,92 +13,102 @@ export default function Contact() {
         cor: "white",
     };
 
+    const onFinish = (values) => {
+        //console.log('Success:', values);
+        encodeValues(values)
+    };
+
+    const onFinishFailed = (errorInfo) => {
+        console.log('Failed:', errorInfo);
+    };
+
+    function encodeValues(values) {
+        const message = `Olá, sou ${values.name}, e gostaria de saber mais sobre ${values.assunto}. `;
+        const str = [message, values.mensagem].filter(Boolean).join('\n');
+        const link = `https://wa.me/5511950711314/?text=${str}`;
+
+        return window.open(link);
+    }
+
     return (
         <section className="bg__container bg__black">
             <div className="container">
                 <Titlesection {...valueTitle} />
                 <div className="container__wrapper">
                     <Row>
-                        <Col flex="1 1 300px">
+                        <Col flex="1 1 250px">
                             <Form
-                                {...formItemLayout}
                                 form={form}
-                                layout={formLayout}
-                                onValuesChange={onFormLayoutChange}
-                                name="nest-messages"
-                                validateMessages={validateMessages}
+                                layout={"vertical"}
+                                name="basic"
+                                onFinish={onFinish}
+                                onFinishFailed={onFinishFailed}
                             >
                                 <Form.Item
-                                    name={["user", "name"]}
+                                    name={"name"}
                                     label={<label style={{color: "white"}}>Nome</label>}
                                     rules={[
                                         {
                                             required: true,
+                                            message: 'Por favor digite seu nome!',
                                         },
                                     ]}
                                 >
                                     <Input/>
                                 </Form.Item>
+                                {/*<Form.Item*/}
+                                {/*    name={"email"}*/}
+                                {/*    label={<label style={{color: "white"}}>E-mail</label>}*/}
+                                {/*    rules={[*/}
+                                {/*        {*/}
+                                {/*            type: "email",*/}
+                                {/*            message: 'Digite um e-mail válido!',*/}
+                                {/*        },*/}
+                                {/*    ]}*/}
+                                {/*>*/}
+                                {/*    <Input placeholder="seu_email@dominio.com"/>*/}
+                                {/*</Form.Item>*/}
                                 <Form.Item
-                                    name={["user", "email"]}
-                                    label={<label style={{color: "white"}}>Email</label>}
-                                    rules={[
-                                        {
-                                            type: "email",
-                                        },
-                                    ]}
-                                >
-                                    <Input/>
-                                </Form.Item>
-                                <Form.Item
-                                    name={["user", "telefone"]}
-                                    label={<label style={{color: "white"}}>Telefone</label>}
+                                    name={"assunto"}
+                                    label={<label style={{color: "white"}}>Assunto</label>}
                                     rules={[
                                         {
                                             required: true,
-                                            message: "Please input your phone number!",
-                                            max: 11,
-                                            min: 11,
+                                            message: 'Por favor, selecione um assunto!',
                                         },
                                     ]}
                                 >
-                                    <Input
-                                        style={{
-                                            width: "100%",
-                                        }}
-                                    />
-                                </Form.Item>
-                                <Form.Item
-                                    name={["user", "assunto"]}
-                                    label={<label style={{color: "white"}}>Assunto</label>}
-                                >
                                     <Select placeholder="Selecione um assunto" allowClear>
-                                        <Option value="civil">Projetos de Construção Civil</Option>
-                                        <Option value="empreiteira">Serviços de Empreiteira</Option>
-                                        <Option value="documentacao">
+                                        <Option value="Projetos de Construção Civil">Projetos de Construção
+                                            Civil</Option>
+                                        <Option value="Serviços de Empreiteira">Serviços de Empreiteira</Option>
+                                        <Option value="Laudos, avaliações e serviços">
                                             Laudos, avaliações e serviços
                                         </Option>
-                                        <Option value="outros">Outros Assuntos</Option>
+                                        <Option value="Outros Assuntos">Outros Assuntos</Option>
                                     </Select>
                                 </Form.Item>
                                 <Form.Item
-                                    name={["user", "mensagem"]}
+                                    name={"mensagem"}
                                     label={<label style={{color: "white"}}>Mensagem</label>}
                                 >
-                                    <Input.TextArea/>
+                                    <Input.TextArea autoSize={{
+                                        minRows: 3,
+                                        maxRows: 5,
+                                    }} showCount maxLength={50}/>
                                 </Form.Item>
-                                <Form.Item ls={{offset: 8}}>
+                                <Form.Item>
                                     <Button
                                         type="primary"
                                         htmlType="submit"
-                                        //className="login-form-button"
+                                        className="login-form-button"
                                     >
-                                        ENVIAR
+                                        ENVIAR VIA WHATSAPP
                                     </Button>
                                 </Form.Item>
                             </Form>
                         </Col>
-                        <Col flex="1 1 200px">
+                        <Col flex="1 1 250px">
                             <figure>
                                 <img
                                     src="./contact.png"
