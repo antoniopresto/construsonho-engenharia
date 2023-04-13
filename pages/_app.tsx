@@ -20,6 +20,7 @@ export default function App({Component, pageProps}) {
                     href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@500&family=Open+Sans&family=Playfair+Display:wght@500&family=Roboto:wght@300&display=swap"
                     rel="stylesheet"
                 />
+                <title>Contrusonho Engenharia</title>
             </Head>
             <Layout>
                 <Topmenu/>

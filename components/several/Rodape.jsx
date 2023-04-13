@@ -1,6 +1,6 @@
 import React from "react";
-import {Row, Col, Button, Layout } from "antd";
-import {Footer } from "antd/lib/layout/layout";
+import {Row, Col, Button, Layout} from "antd";
+import {Footer} from "antd/lib/layout/layout";
 import {
     InstagramOutlined,
     FacebookOutlined,
@@ -36,17 +36,31 @@ export default function Rodape() {
                         <Col flex="1 2 auto">
                             <Subtitlesection {...valueSubtitle[0]} />
                             <div className="outhertexts">
-                                <p>Av. Celeste, 310, carapicuiba</p>
-                                <p>Tel. (11) 4141-6556</p>
-                                <p>+55 11 95071-1314</p>
+                                <p>
+                                    <a href="https://goo.gl/maps/auNEbboK8t76N7YE6" target="_blank">
+                                        Alameda Mamoré, 911 - 11º andar sala 1106 <br/> Alphaville, Barueri/SP
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="tel:+551141951020" target="_blank">
+                                        Tel. (11) 4195-1020
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="tel:+5511950711314" target="_blank">
+                                        +55 11 95071-1314
+                                    </a>
+                                </p>
                             </div>
                         </Col>
                         <Col flex="0 1 150px">
                             <Subtitlesection {...valueSubtitle[2]} />
-                            <Button type="text" href="https://www.instagram.com/engenhariaconstrusonhos/" icon={<InstagramOutlined/>}>
+                            <Button type="text" href="https://www.instagram.com/engenhariaconstrusonhos/"
+                                    icon={<InstagramOutlined/>}>
                                 Instagram
                             </Button>
-                            <Button type="text" href="https://www.facebook.com/engenhariaconstrusonhos-108246148003444" icon={<FacebookOutlined/>}>
+                            <Button type="text" href="https://www.facebook.com/engenhariaconstrusonhos-108246148003444"
+                                    icon={<FacebookOutlined/>}>
                                 Facebook
                             </Button>
                             <Button type="text" href="https://wa.me/5511950711314" icon={<WhatsAppOutlined/>}>
@@ -67,7 +81,7 @@ export default function Rodape() {
                         </Col>
 
                         <Col flex="1 1 auto" align={"center"}>
-                            <figure style={{width: "5rem"}} onClick={() => window.scrollTo(0,0)}>
+                            <figure style={{width: "5rem"}} onClick={() => window.scrollTo(0, 0)}>
                                 <img
                                     src="./backtop.png"
                                     alt="voltar ao inicio da página"
