@@ -1,5 +1,5 @@
 import React from "react";
-import Titlesection from "./generics/Titlesection";
+import TitleSection from "./generics/TitleSection";
 import {Row, Col} from "antd";
 import {Header} from "antd/lib/layout/layout";
 
@@ -12,7 +12,7 @@ export default function History() {
     return (
         <section className="bg__container bg__white">
             <div className="container">
-                <Titlesection {...valueTitle} />
+                <TitleSection {...valueTitle} />
                 <div className="container__wrapper">
                     <Row>
                         <Col flex="1 1 220px">

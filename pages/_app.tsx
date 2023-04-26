@@ -1,7 +1,7 @@
 import React from "react";
 import {Layout} from "antd";
 import {Content} from "antd/lib/layout/layout";
-import Topmenu from "../components/several/Topmenu";
+import TopMenu from "../components/several/TopMenu";
 import Rodape from "../components/several/Rodape";
 import Head from "next/head";
 
@@ -23,7 +23,7 @@ export default function App({Component, pageProps}) {
                 <title>Contrusonho Engenharia</title>
             </Head>
             <Layout>
-                <Topmenu/>
+                <TopMenu/>
                 <Content>
                     <Component {...pageProps} />
                 </Content>

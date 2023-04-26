@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Subtitlesection(props) {
+export default function SubtitleSection(props) {
   const { text } = props;
   return (
     <>

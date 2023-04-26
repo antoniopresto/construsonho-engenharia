@@ -9,7 +9,7 @@ import {
     BankOutlined,
     CameraOutlined,
 } from "@ant-design/icons";
-import Subtitlesection from "../generics/Subtitlesection";
+import SubtitleSection from "../generics/SubtitleSection";
 import Link from "next/link";
 
 export default function Rodape() {
@@ -34,7 +34,7 @@ export default function Rodape() {
                             </figure>
                         </Col>
                         <Col flex="1 2 auto">
-                            <Subtitlesection {...valueSubtitle[0]} />
+                            <SubtitleSection {...valueSubtitle[0]} />
                             <div className="outhertexts">
                                 <p>
                                     <a href="https://goo.gl/maps/auNEbboK8t76N7YE6" target="_blank">
@@ -54,7 +54,7 @@ export default function Rodape() {
                             </div>
                         </Col>
                         <Col flex="0 1 150px">
-                            <Subtitlesection {...valueSubtitle[2]} />
+                            <SubtitleSection {...valueSubtitle[2]} />
                             <Button type="text" href="https://www.instagram.com/engenhariaconstrusonhos/"
                                     icon={<InstagramOutlined/>}>
                                 Instagram
@@ -68,7 +68,7 @@ export default function Rodape() {
                             </Button>
                         </Col>
                         <Col flex="0 1 150px">
-                            <Subtitlesection {...valueSubtitle[1]} />
+                            <SubtitleSection {...valueSubtitle[1]} />
                             <Button type="text" href="/" icon={<HomeOutlined/>}>
                                 Home
                             </Button>

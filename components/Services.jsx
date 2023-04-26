@@ -1,5 +1,5 @@
 import React from "react";
-import Titlesection from "./generics/Titlesection";
+import TitleSection from "./generics/TitleSection";
 import {Row, Col} from "antd";
 import Cards from "./generics/Cards";
 import {Header} from "antd/lib/layout/layout";
@@ -34,7 +34,7 @@ export default function Services() {
     return (
         <section className="bg__container bg__white">
             <div className="container">
-                <Titlesection {...valueTitle} />
+                <TitleSection {...valueTitle} />
                 <div className="container__wrapper">
                     <Row>
                         <Cards {...valueCard[0]} />

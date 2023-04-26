@@ -1,5 +1,5 @@
 import React from "react";
-import Bannertitle from "../components/generics/Bannertitle";
+import BannerTitle from "../components/generics/BannerTitle";
 import Goals from "../components/Goals";
 import Contact from "../components/several/Contact";
 import History from "../components/History";
@@ -12,7 +12,7 @@ export default function About() {
 
     return (
         <>
-            <Bannertitle {...valueTitle} />
+            <BannerTitle {...valueTitle} />
             <Goals/>
             <History/>
             <Contact/>

@@ -1,6 +1,6 @@
 import React from "react";
 import {Col} from "antd";
-import Descriptioncards from "./Descriptioncards";
+import DescriptionCards from "./DescriptionCards";
 
 export default function Cards(props) {
     const {subtitulo, linkimg, description} = props;
@@ -10,7 +10,7 @@ export default function Cards(props) {
                 <div className="container_cards" style={{background: linkimg, backgroundSize: "cover"}}>
                     <div className="overlay outhertexts">
                         <div className="items head">
-                            <Descriptioncards description={description}/>
+                            <DescriptionCards description={description}/>
                             <hr/>
                         </div>
                       <div className="items"/>

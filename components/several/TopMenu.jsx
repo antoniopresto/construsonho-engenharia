@@ -7,7 +7,7 @@ import React from "react";
 import Link from "next/link";
 import {Header} from "antd/lib/layout/layout";
 
-export default function Topmenu() {
+export default function TopMenu() {
     const [useVisible, setVisible] = React.useState(false);
 
     const showDrawer = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import Titlesection from "./generics/Titlesection";
+import TitleSection from "./generics/TitleSection";
 import {Row} from "antd";
 import Cards from "./generics/Cards";
 import {Header} from "antd/lib/layout/layout";
@@ -35,7 +35,7 @@ export default function Goals() {
     return (
         <section className="bg__container bg__gray">
             <div className="container">
-                <Titlesection {...valueTitle} />
+                <TitleSection {...valueTitle} />
                 <div className="container__wrapper">
                     <Row>
                         <Cards {...valueCard[0]} />

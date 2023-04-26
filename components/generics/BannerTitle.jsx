@@ -1,7 +1,7 @@
 import React from "react";
 import {Row, Col, Breadcrumb} from "antd";
 
-export default function Bannertitle(props) {
+export default function BannerTitle(props) {
     const {title, breadcrumbName} = props;
 
     return (

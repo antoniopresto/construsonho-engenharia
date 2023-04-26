@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Titlesection(props) {
+export default function TitleSection(props) {
   const { text, title, cor } = props;
   return (
     <>

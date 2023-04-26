@@ -1,6 +1,6 @@
 import React from "react";
 import {Button, Col, Form, Input, Row, Select} from "antd";
-import Titlesection from "../generics/Titlesection";
+import TitleSection from "../generics/TitleSection";
 
 const {Option} = Select;
 
@@ -33,7 +33,7 @@ export default function Contact() {
     return (
         <section className="bg__container bg__black">
             <div className="container">
-                <Titlesection {...valueTitle} />
+                <TitleSection {...valueTitle} />
                 <div className="container__wrapper">
                     <Row>
                         <Col flex="1 1 250px">
