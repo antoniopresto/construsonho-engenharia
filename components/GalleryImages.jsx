@@ -1,6 +1,4 @@
 import React from "react";
-import GalleryMin from "./GalleryMin";
-import GalleryMax from "./GalleryMax";
 import {useWidth} from "./hooks/useWidth";
 
 export default function GalleryImages() {

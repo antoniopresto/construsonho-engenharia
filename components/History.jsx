@@ -1,7 +1,6 @@
 import React from "react";
 import TitleSection from "./generics/TitleSection";
 import {Row, Col} from "antd";
-import {Header} from "antd/lib/layout/layout";
 
 export default function History() {
     const valueTitle = {
