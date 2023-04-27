@@ -15,7 +15,7 @@ export default function History() {
                 <div className="container__wrapper">
                     <Row>
                         <Col flex="1 1 220px">
-                            <p className="outhertexts">
+                            <p className="outher-texts">
                                 A Construsonho Engenharia surgiu com o principal objetivo de
                                 proporcionar uma enorme satisfação para seus clientes,
                                 compreendendo suas necessidades e fornecendo-lhes seerviços que
@@ -30,7 +30,7 @@ export default function History() {
                             </p>
                         </Col>
                         <Col flex="1 1 220px">
-                            <p className="outhertexts">
+                            <p className="outher-texts">
                                 Com atuação há alguns anos de seu idealizador na área, um jovem
                                 cheio de sonhos objetivos começamos a nos desenvolver e nos
                                 tornamos uma empresa, com pretensão de chegar cada vez mais longe.

@@ -19,7 +19,7 @@ export default function TopMenu() {
     };
 
     return (
-        <Header className="navmenu">
+        <Header className="nav-menu">
             <div className="container">
                 <Row>
                     <Col flex="0 1 200px" style={{top: "10px"}}>
@@ -36,7 +36,7 @@ export default function TopMenu() {
 
                     <Col flex="1 1 auto" style={{textAlign: "end", bottom: "8px"}}><>
                         <Button
-                            className="menubtn"
+                            className="menu-btn"
                             type="primary"
                             shape="circle"
                             icon={<MenuOutlined/>}
@@ -62,7 +62,7 @@ export default function TopMenu() {
                         </Drawer>
                     </>
                         <Menu
-                            className="bigmenu"
+                            className="big-menu"
                             mode="horizontal"
                             overflowedIndicator={<MenuOutlined/>}
                             style={{lineHeight: "64px", fontFamily: "Montserrat, sans-serif"}}

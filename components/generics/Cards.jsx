@@ -7,8 +7,8 @@ export default function Cards(props) {
     return (
         <>
             <Col flex="1 1 250px" >
-                <div className="container_cards" style={{background: imgUrl, backgroundSize: "cover"}}>
-                    <div className="overlay outhertexts">
+                <div className="container__cards" style={{background: imgUrl, backgroundSize: "cover"}}>
+                    <div className="overlay outher-texts">
                         <div className="items head">
                             <DescriptionCards description={description}/>
                             <hr/>
@@ -18,8 +18,8 @@ export default function Cards(props) {
                 </div>
 
                 <div style={{paddingBottom: "1rem"}}>
-                    <p className="subtitlesection">{subtitle}</p>
-                    <div className="underlaine__card"/>
+                    <p className="subtitle-section">{subtitle}</p>
+                    <div className="underline__card"/>
                 </div>
             </Col>
         </>

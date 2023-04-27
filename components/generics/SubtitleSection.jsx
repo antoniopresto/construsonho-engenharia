@@ -4,8 +4,8 @@ export default function SubtitleSection(props) {
   const { text } = props;
   return (
     <>
-      <p className="subtitlesection"> {text} </p>
-      <div className="underlaine__card" />
+      <p className="subtitle-section"> {text} </p>
+      <div className="underline__card" />
     </>
   );
 }

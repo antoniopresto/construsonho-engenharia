@@ -27,7 +27,7 @@ export default function Rodape() {
                         <Col flex="0 1 140px" className="rodape_figure">
                             <figure>
                                 <img
-                                    src="./logo.png"
+                                    src="/logo.png"
                                     alt="logotipo empresa construsonho engenharia"
                                     style={{width: "100%"}}
                                 />
@@ -35,7 +35,7 @@ export default function Rodape() {
                         </Col>
                         <Col flex="1 2 auto">
                             <SubtitleSection {...valueSubtitle[0]} />
-                            <div className="outhertexts">
+                            <div className="outher-texts">
                                 <p>
                                     <a href="https://goo.gl/maps/auNEbboK8t76N7YE6" target="_blank">
                                         Alameda Mamoré, 911 - 11º andar sala 1106 <br/> Alphaville, Barueri/SP
@@ -83,7 +83,7 @@ export default function Rodape() {
                         <Col flex="1 1 auto" align={"center"}>
                             <figure style={{width: "5rem"}} onClick={() => window.scrollTo(0, 0)}>
                                 <img
-                                    src="./backtop.png"
+                                    src="/backtop.png"
                                     alt="voltar ao inicio da página"
                                     style={{width: "100%"}}
                                 />
@@ -93,7 +93,7 @@ export default function Rodape() {
                 </div>
             </Footer>
             <div className="rodape_name">
-              <span className="spansection">
+              <span className="span-section">
                 Engenheiro Civil: Wedson dos Santos - CREA/SP: 5070620780
               </span>
             </div>

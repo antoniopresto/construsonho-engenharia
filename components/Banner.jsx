@@ -7,9 +7,9 @@ export default function Banner() {
             <div className="container">
                 <Row>
                     <Col flex="1 1 280px">
-                        <span className="spansection">CONSTRUSONHO ENGENHARIA</span>
-                        <p className="titleBanner">
-                            Um Novo <span className="underlaine">Conceito</span> Em Edificação
+                        <span className="span-section">CONSTRUSONHO ENGENHARIA</span>
+                        <p className="title-banner">
+                            Um Novo <span className="underline">Conceito</span> Em Edificação
                         </p>
                     </Col>
                     <Col
@@ -18,7 +18,7 @@ export default function Banner() {
                     >
                         <figure>
                             <img
-                                src="./banner.png"
+                                src="/banner.png"
                                 alt="imagem de banner"
                                 style={{width: "70%"}}
                             />

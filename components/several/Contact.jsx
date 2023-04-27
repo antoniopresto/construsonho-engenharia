@@ -101,7 +101,7 @@ export default function Contact() {
                                     <Button
                                         type="primary"
                                         htmlType="submit"
-                                        className="login-form-button"
+                                        className="contact-form__button"
                                     >
                                         ENVIAR VIA WHATSAPP
                                     </Button>
@@ -111,7 +111,7 @@ export default function Contact() {
                         <Col flex="1 1 250px">
                             <figure>
                                 <img
-                                    src="./contact.png"
+                                    src="/contact.png"
                                     alt="imagem de contato"
                                     style={{width: "100%"}}
                                 />

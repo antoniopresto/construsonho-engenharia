@@ -5,16 +5,16 @@ export default function TitleSection(props) {
   return (
     <>
       <div style={{paddingBottom: "1rem"}}>
-        <span className="spansection">{text}</span>
+        <span className="span-section">{text}</span>
         <h4
-          className="titlesection"
+          className="title-section"
           style={{
             color: cor,
           }}
         >
           {title}
         </h4>
-        <div className="underlaine__card" />
+        <div className="underline__card" />
       </div>
     </>
   );
