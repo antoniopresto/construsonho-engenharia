@@ -31,7 +31,7 @@ figure {
 //tamanho titulos
 @banner_size: 3rem;
 @title_size: 2.5rem;
-@subtitle_size: 2.2rem;
+@subtitle_size: 1.1rem;
 @span_size: 0.7rem;
 @text_sizes: 1em;
 //cores
@@ -42,7 +42,7 @@ figure {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 850px;
+  max-width: 950px;
 }
 
 .container__wrapper {
@@ -54,7 +54,7 @@ figure {
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 50px 30px;
+  padding: 40px 20px;
 
   &.bg__white {
     background-image: url(/bg_banner.png);
@@ -103,14 +103,13 @@ figure {
   font-family: @title_section;
   color: @black;
   font-size: @subtitle_size;
-  margin: 1em 0;
   line-height: 1em;
   letter-spacing: 1px;
   font-weight: bold;
   text-transform: capitalize;
 }
 
-.outher-texts {
+.others-texts {
   font-family: @texts;
   font-size: @text_sizes;
   text-align: justify;
@@ -204,24 +203,23 @@ figure {
   transition-delay: 0.3s;
 }
 
-//CARDS ITEMS
-.container__icon-items {
-  //display: flex;
-  //justify-content: space-between;
-}
+//ICONCARDS
 .ant-card-body{
-  padding: 24px 10px!important;
+  padding: 20px 10px!important;
 }
 
 .icon-cards_description {
-  min-height: 15rem;
+  color: @black;
 
   ul {
+    display: flex;
+    flex-direction: column;
     list-style: none;
     padding: 0;
     margin: 0 auto;
     letter-spacing: 1.5px;
     text-align: start;
+    gap: 0.5rem;
 
     li {
       user-select: none;

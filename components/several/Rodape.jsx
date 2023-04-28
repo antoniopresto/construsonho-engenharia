@@ -15,7 +15,7 @@ import Link from "next/link";
 export default function Rodape() {
     const valueSubtitle = [
         {id: "0_rodape", text: "Contato"},
-        {id: "1_rodape", text: "Links Especiais"},
+        {id: "1_rodape", text: "Links Internos"},
         {id: "2_rodape", text: "Redes Sociais"},
     ];
 
@@ -35,7 +35,7 @@ export default function Rodape() {
                         </Col>
                         <Col flex="1 2 auto">
                             <SubtitleSection {...valueSubtitle[0]} />
-                            <div className="outher-texts">
+                            <div className="others-texts">
                                 <p>
                                     <a href="https://goo.gl/maps/auNEbboK8t76N7YE6" target="_blank">
                                         Alameda Mamoré, 911 - 11º andar sala 1106 <br/> Alphaville, Barueri/SP

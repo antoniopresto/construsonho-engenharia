@@ -22,7 +22,7 @@ export default function Services() {
             id: "services_11",
             subtitle: "Serviços de Empreiteira",
             imgUrl: "/services_1.png",
-            description: ["Construção de Edificação Empresarial;", "Construção de Edificação Residencial;", "Reformas em geral;", "Manutenção Predial;", "Manutenção Industrial;", "Instalação e manutenção elétrica;", "Instalações hidráulicas, sanitárias e de gás;", "Serviços de pintura de edifícios em geral."]
+            description: ["Construção de Edificação Empresarial e/ou Residencial;", "Reformas em geral;", "Manutenção Predial;", "Manutenção Industrial;", "Instalação e manutenção elétrica;", "Instalações hidráulicas, sanitárias e de gás;", "Serviços de pintura de edifícios em geral."]
         },
         {
             id: "services_22",
@@ -36,11 +36,9 @@ export default function Services() {
             <div className="container">
                 <TitleSection {...valueTitle} />
                 <div className="container__wrapper">
-                    <Row>
+                    <Row style={{rowGap: "1rem", columnGap: "1rem"}}>
                         <IconCards {...valueCard[0]} />
-
                         <IconCards {...valueCard[1]} />
-
                         <IconCards {...valueCard[2]} />
                     </Row>
                 </div>

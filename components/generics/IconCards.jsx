@@ -5,20 +5,23 @@ import DescriptionCards from "./DescriptionCards";
 const {Meta} = Card;
 
 export default function IconCards(props) {
-    const {subtitle, imgUrl, description} = props;
+    const {subtitle, imgUrl, description, minHeight} = props;
 
     return (
-        <Col flex="1 1 250px">
+        <Col flex="1 1 290px">
             <Card
-                style={{maxWidth: 270, marginBottom: 10}}
+                style={{background: "none", border: "none"}}
                 cover={<img alt={subtitle} src={imgUrl} height={200} style={{objectFit: "cover"}}/>}
             >
-                <Meta className="subtitle-section" title={subtitle}/>
-                <div className="underline__card"/>
-                <div className="outher-texts icon-cards_description">
+                <div style={{paddingBottom: "1rem"}}>
+                    <p className="subtitle-section">{subtitle}</p>
+                    <div className="underline__card"/>
+                </div>
+                <div className="others-texts icon-cards_description">
                     <DescriptionCards description={description}/>
                 </div>
             </Card>
         </Col>
     )
 };
+

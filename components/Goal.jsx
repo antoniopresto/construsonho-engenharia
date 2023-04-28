@@ -35,8 +35,8 @@ export default function Goal() {
         <section className="bg__container bg__gray">
             <div className="container">
                 <TitleSection {...valueTitle} />
-                <div className="container__wrapper container__icon-items">
-                    <Row>
+                <div className="container__wrapper">
+                    <Row style={{rowGap: "1rem", columnGap: "1rem"}}>
                         <IconCards {...valueCard[0]}/>
                         <IconCards {...valueCard[1]}/>
                         <IconCards {...valueCard[2]}/>

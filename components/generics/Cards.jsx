@@ -8,7 +8,7 @@ export default function Cards(props) {
         <>
             <Col flex="1 1 250px" >
                 <div className="container__cards" style={{background: imgUrl, backgroundSize: "cover"}}>
-                    <div className="overlay outher-texts">
+                    <div className="overlay others-texts">
                         <div className="items head">
                             <DescriptionCards description={description}/>
                             <hr/>

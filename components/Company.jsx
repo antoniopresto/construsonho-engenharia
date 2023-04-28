@@ -25,7 +25,7 @@ export default function Company() {
                             </figure>
                         </Col>
 
-                        <Col flex="1 1 300px" className="outher-texts">
+                        <Col flex="1 1 300px" className="others-texts">
                             <p>
                                 Criamos uma solução para o desenvolvimento integral, seguro,
                                 eficiente e eficaz de projetos arquitetônicos de investimento
