@@ -94,7 +94,7 @@ export default function Rodape() {
             </Footer>
             <div className="rodape_name">
               <span className="span-section">
-                Engenheiro Civil: Wedson dos Santos - CREA/SP: 5070620780
+                Todos os direitos reservados © 2023 - Construsonho Engenharia.
               </span>
             </div>
         </Layout>

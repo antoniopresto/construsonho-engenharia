@@ -27,13 +27,13 @@ figure {
 @title_banner: "Merriweather", serif;
 @title_section: "Playfair Display", serif;
 @span_section: "Montserrat", sans-serif;
-@texts: "Open Sans", sans-serif;
+@texts: "Roboto", sans-serif;
 //tamanho titulos
 @banner_size: 3rem;
 @title_size: 2.5rem;
 @subtitle_size: 1.1rem;
 @span_size: 0.7rem;
-@text_sizes: 1em;
+@text_sizes: 1rem;
 //cores
 @orange: #f37b20;
 @black: #252626;
@@ -47,6 +47,30 @@ figure {
 
 .container__wrapper {
   padding: 10px;
+
+  &__advantage-image{
+    h5{
+      position: absolute;
+      bottom: 10px;
+      font-weight: bold;
+      background: #fafafa;
+      padding: 0.2rem 0.5rem;
+
+      span{
+        color: @orange;
+        font-style: italic;
+        font-size: medium;
+      }
+
+    }
+  }
+
+  &__advantage-text{
+    h3, h4{
+      font-weight: 700;
+      color: black;
+    }
+  }
 }
 
 //plano de fundo
@@ -112,6 +136,7 @@ figure {
 .others-texts {
   font-family: @texts;
   font-size: @text_sizes;
+  font-weight: 800;
   text-align: justify;
   margin: 0.6rem;
 }

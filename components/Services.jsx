@@ -16,19 +16,40 @@ export default function Services() {
             id: "services_00",
             subtitle: "Laudos, avaliações e serviços",
             imgUrl: "/services_0.png",
-            description: ["Vistorias, laudos técnicos e perícias;", "Supervisão e acompanhamento de obras;", "Laudo de impacto de vizinhança;", "Avaliação e tratamento de patologias nas construções;", "Monitoramento e qualificação de solos."]
+            description: [
+                "Vistorias, laudos técnicos e perícias;",
+                "Supervisão e acompanhamento de obras;",
+                "Laudo de impacto de vizinhança;",
+                "Avaliação e tratamento de patologias nas construções;",
+                "Monitoramento e qualificação de solos."
+            ]
         },
         {
             id: "services_11",
             subtitle: "Serviços de Empreiteira",
             imgUrl: "/services_1.png",
-            description: ["Construção de Edificação Empresarial e/ou Residencial;", "Reformas em geral;", "Manutenção Predial;", "Manutenção Industrial;", "Instalação e manutenção elétrica;", "Instalações hidráulicas, sanitárias e de gás;", "Serviços de pintura de edifícios em geral."]
+            description: [
+                "Construção de Edificação Empresarial e/ou Residencial;",
+                "Reformas em geral;",
+                "Manutenção Predial;",
+                "Manutenção Industrial;",
+                "Instalação e manutenção elétrica;",
+                "Instalações hidráulicas, sanitárias e de gás;",
+                "Serviços de pintura de edifícios em geral."
+            ]
         },
         {
             id: "services_22",
             subtitle: "Projetos de Construção Civil",
             imgUrl: "/services_2.png",
-            description: ["Projetos executivos;", "Projetos estruturais em concreto armado e alvenaria estrutural;", "Projetos de estruturas metálicas;", "Projetos de instalações hidráulicas;", "Projetos de instalações elétricas;", "Dentre outros projetos relacionados."]
+            description: [
+                "Projetos executivos;",
+                "Projetos estruturais em concreto armado e alvenaria estrutural;",
+                "Projetos de estruturas metálicas;",
+                "Projetos de instalações hidráulicas;",
+                "Projetos de instalações elétricas;",
+                "Dentre outros projetos relacionados."
+            ]
         },
     ];
     return (
@@ -38,8 +59,8 @@ export default function Services() {
                 <div className="container__wrapper">
                     <Row style={{rowGap: "1rem", columnGap: "1rem"}}>
                         <IconCards {...valueCard[0]} />
-                        <IconCards {...valueCard[1]} />
                         <IconCards {...valueCard[2]} />
+                        <IconCards {...valueCard[1]} />
                     </Row>
                 </div>
             </div>

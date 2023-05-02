@@ -15,19 +15,36 @@ export default function Goal() {
             id: "goals_0",
             subtitle: "Missão",
             imgUrl: "/goals_00.png",
-            description: ["Gerar a oportunidade da casa própria;", "Chegar nas grandes empresas e empreendimentos;", "Criar oportunidades de empregos;", "Investir em qualificação para todos os nossos colaboradores."],
+            description: [
+                "Gerar a oportunidade da casa própria;",
+                "Chegar nas grandes empresas e empreendimentos;",
+                "Criar oportunidades de empregos;",
+                "Investir em qualificação para todos os nossos colaboradores."
+            ],
         },
         {
             id: "goals_1",
             subtitle: "Visão",
             imgUrl: "/goals_11.png",
-            description: ["Nos tornar uma grande e renomada Incorporadora;", "Ser uma Empresa referência no ramo da construção civil no nosso país e países vizinhos."],
+            description: [
+                "Nos tornar uma grande e renomada Incorporadora;",
+                "Ser uma Empresa referência no ramo da construção civil no nosso país e países vizinhos."
+            ],
         },
         {
             id: "goals_2",
             subtitle: "Valores",
             imgUrl: "/goals_22.png",
-            description: ["Confiança;", "Excelência;", "Prestação de contas;", "Esforço;", "Sustentabilidade;", "Responsabilidade;", "Compromisso;", "Gratidão."],
+            description: [
+                "Confiança;",
+                "Excelência;",
+                "Prestação de contas;",
+                "Esforço;",
+                "Sustentabilidade;",
+                "Responsabilidade;",
+                "Compromisso;",
+                "Gratidão."
+            ],
         },
     ];
 
