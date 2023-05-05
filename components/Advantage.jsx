@@ -35,24 +35,24 @@ export default function Advantage() {
                 <TitleSection {...valueTitle} />
                 <div className="container__wrapper">
                     <Row>
-                        <Col flex="1 1 200px" className="others-texts">
+                        <Col flex="1 1 300px" className="others-texts">
                             <div className="container__wrapper__advantage-image">
                                 <figure>
                                     {
                                         isMobile ?
                                             <img
                                                 src="/ceo_1.png"
-                                                alt="logotipo empresa"
+                                                alt="Wedson dos Santos - Engenheiro Civil"
                                                 style={{
-                                                    width: "90%"
+                                                    width: "12.6rem"
                                                 }}
                                             />
                                             :
                                             <img
                                                 src="/ceo_2.png"
-                                                alt="logotipo empresa"
+                                                alt="Wedson dos Santos - Engenheiro Civil"
                                                 style={{
-                                                    width: "70%"
+                                                    width: "17.2rem"
                                                 }}
                                             />
                                     }
@@ -67,7 +67,7 @@ export default function Advantage() {
                             </div>
                         </Col>
 
-                        <Col flex="1 1 300px" className="others-texts">
+                        <Col flex="1 1 450px" className="others-texts">
                             <div className="container__wrapper__advantage-text">
                                 <h2 className="span-section" style={{textAlign: "center"}}>
                                     Realizar e construir sonhos!
