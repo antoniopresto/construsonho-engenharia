@@ -1,8 +1,7 @@
 import React from "react";
-import Titlesection from "./generics/Titlesection";
+import TitleSection from "./generics/TitleSection";
 import {Row} from "antd";
 import Cards from "./generics/Cards";
-import {Header} from "antd/lib/layout/layout";
 
 export default function Goals() {
     const valueTitle = {
@@ -14,20 +13,20 @@ export default function Goals() {
     const valueCard = [
         {
             id: "goals_0",
-            subtitulo: "Missão",
-            linkimg: "url(./goals_00.png)",
+            subtitle: "Missão",
+            imgUrl: "url(./goals_00.png)",
             description: ["Gerar a oportunidade da casa própria;", "Chegar nas grandes empresas e empreendimentos;", "Criar oportunidades de empregos;", "Investir em qualificação para todos os nossos colaboradores."],
         },
         {
             id: "goals_1",
-            subtitulo: "Visão",
-            linkimg: "url(./goals_11.png)",
+            subtitle: "Visão",
+            imgUrl: "url(./goals_11.png)",
             description: ["Nos tornar uma grande e renomada Incorporadora;", "Ser uma Empresa referência no ramo da construção civil no nosso país e países vizinhos."],
         },
         {
             id: "goals_2",
-            subtitulo: "Valores",
-            linkimg: "url(./goals_22.png)",
+            subtitle: "Valores",
+            imgUrl: "url(./goals_22.png)",
             description: ["Confiança;", "Excelência;", "Prestação de contas;", "Esforço;", "Sustentabilidade;", "Responsabilidade;", "Compromisso;", "Gratidão."],
         },
     ];
@@ -35,7 +34,7 @@ export default function Goals() {
     return (
         <section className="bg__container bg__gray">
             <div className="container">
-                <Titlesection {...valueTitle} />
+                <TitleSection {...valueTitle} />
                 <div className="container__wrapper">
                     <Row>
                         <Cards {...valueCard[0]} />

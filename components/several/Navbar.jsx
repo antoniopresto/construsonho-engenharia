@@ -47,7 +47,7 @@ export default function Navbar() {
                 </Col>
                 <>
                     <Button
-                        className="menubtn"
+                        className="menu-btn"
                         type="primary"
                         shape="circle"
                         onClick={showDrawer}

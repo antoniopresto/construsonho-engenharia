@@ -1,16 +1,16 @@
 import React from "react";
 import {Col} from "antd";
-import Descriptioncards from "./Descriptioncards";
+import DescriptionCards from "./DescriptionCards";
 
 export default function Cards(props) {
-    const {subtitulo, linkimg, description} = props;
+    const {subtitle, imgUrl, description} = props;
     return (
         <>
             <Col flex="1 1 250px" >
-                <div className="container_cards" style={{background: linkimg, backgroundSize: "cover"}}>
-                    <div className="overlay outhertexts">
+                <div className="container__cards" style={{background: imgUrl, backgroundSize: "cover"}}>
+                    <div className="overlay others-texts">
                         <div className="items head">
-                            <Descriptioncards description={description}/>
+                            <DescriptionCards description={description}/>
                             <hr/>
                         </div>
                       <div className="items"/>
@@ -18,8 +18,8 @@ export default function Cards(props) {
                 </div>
 
                 <div style={{paddingBottom: "1rem"}}>
-                    <p className="subtitlesection">{subtitulo}</p>
-                    <div className="underlaine__card"/>
+                    <p className="subtitle-section">{subtitle}</p>
+                    <div className="underline__card"/>
                 </div>
             </Col>
         </>

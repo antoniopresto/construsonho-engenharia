@@ -1,6 +1,6 @@
 import React from "react";
 import {Button, Col, Form, Input, Row, Select} from "antd";
-import Titlesection from "../generics/Titlesection";
+import TitleSection from "../generics/TitleSection";
 
 const {Option} = Select;
 
@@ -33,7 +33,7 @@ export default function Contact() {
     return (
         <section className="bg__container bg__black">
             <div className="container">
-                <Titlesection {...valueTitle} />
+                <TitleSection {...valueTitle} />
                 <div className="container__wrapper">
                     <Row>
                         <Col flex="1 1 250px">
@@ -101,7 +101,7 @@ export default function Contact() {
                                     <Button
                                         type="primary"
                                         htmlType="submit"
-                                        className="login-form-button"
+                                        className="contact-form__button"
                                     >
                                         ENVIAR VIA WHATSAPP
                                     </Button>
@@ -111,7 +111,7 @@ export default function Contact() {
                         <Col flex="1 1 250px">
                             <figure>
                                 <img
-                                    src="./contact.png"
+                                    src="/contact.png"
                                     alt="imagem de contato"
                                     style={{width: "100%"}}
                                 />

@@ -1,7 +1,6 @@
 import React from "react";
 import {Button, Col, Row} from "antd";
-import Titlesection from "./generics/Titlesection";
-import {Header} from "antd/lib/layout/layout";
+import TitleSection from "./generics/TitleSection";
 
 export default function Company() {
     const valueTitle = {
@@ -13,7 +12,7 @@ export default function Company() {
     return (
         <section className="bg__container bg__gray">
             <div className="container">
-                <Titlesection {...valueTitle} />
+                <TitleSection {...valueTitle} />
                 <div className="container__wrapper">
                     <Row>
                         <Col flex="1 1 200px">
@@ -26,7 +25,7 @@ export default function Company() {
                             </figure>
                         </Col>
 
-                        <Col flex="1 1 300px" className="outhertexts">
+                        <Col flex="1 1 300px" className="others-texts">
                             <p>
                                 Criamos uma solução para o desenvolvimento integral, seguro,
                                 eficiente e eficaz de projetos arquitetônicos de investimento

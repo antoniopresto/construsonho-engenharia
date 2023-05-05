@@ -7,7 +7,7 @@ import React from "react";
 import Link from "next/link";
 import {Header} from "antd/lib/layout/layout";
 
-export default function Topmenu() {
+export default function TopMenu() {
     const [useVisible, setVisible] = React.useState(false);
 
     const showDrawer = () => {
@@ -19,7 +19,7 @@ export default function Topmenu() {
     };
 
     return (
-        <Header className="navmenu">
+        <Header className="nav-menu">
             <div className="container">
                 <Row>
                     <Col flex="0 1 200px" style={{top: "10px"}}>
@@ -36,7 +36,7 @@ export default function Topmenu() {
 
                     <Col flex="1 1 auto" style={{textAlign: "end", bottom: "8px"}}><>
                         <Button
-                            className="menubtn"
+                            className="menu-btn"
                             type="primary"
                             shape="circle"
                             icon={<MenuOutlined/>}
@@ -62,7 +62,7 @@ export default function Topmenu() {
                         </Drawer>
                     </>
                         <Menu
-                            className="bigmenu"
+                            className="big-menu"
                             mode="horizontal"
                             overflowedIndicator={<MenuOutlined/>}
                             style={{lineHeight: "64px", fontFamily: "Montserrat, sans-serif"}}

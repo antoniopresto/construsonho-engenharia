@@ -9,13 +9,13 @@ import {
     BankOutlined,
     CameraOutlined,
 } from "@ant-design/icons";
-import Subtitlesection from "../generics/Subtitlesection";
+import SubtitleSection from "../generics/SubtitleSection";
 import Link from "next/link";
 
 export default function Rodape() {
     const valueSubtitle = [
         {id: "0_rodape", text: "Contato"},
-        {id: "1_rodape", text: "Links Especiais"},
+        {id: "1_rodape", text: "Links Internos"},
         {id: "2_rodape", text: "Redes Sociais"},
     ];
 
@@ -27,15 +27,15 @@ export default function Rodape() {
                         <Col flex="0 1 140px" className="rodape_figure">
                             <figure>
                                 <img
-                                    src="./logo.png"
+                                    src="/logo.png"
                                     alt="logotipo empresa construsonho engenharia"
                                     style={{width: "100%"}}
                                 />
                             </figure>
                         </Col>
                         <Col flex="1 2 auto">
-                            <Subtitlesection {...valueSubtitle[0]} />
-                            <div className="outhertexts">
+                            <SubtitleSection {...valueSubtitle[0]} />
+                            <div className="others-texts">
                                 <p>
                                     <a href="https://goo.gl/maps/auNEbboK8t76N7YE6" target="_blank">
                                         Alameda Mamoré, 911 - 11º andar sala 1106 <br/> Alphaville, Barueri/SP
@@ -54,7 +54,7 @@ export default function Rodape() {
                             </div>
                         </Col>
                         <Col flex="0 1 150px">
-                            <Subtitlesection {...valueSubtitle[2]} />
+                            <SubtitleSection {...valueSubtitle[2]} />
                             <Button type="text" href="https://www.instagram.com/engenhariaconstrusonhos/"
                                     icon={<InstagramOutlined/>}>
                                 Instagram
@@ -68,7 +68,7 @@ export default function Rodape() {
                             </Button>
                         </Col>
                         <Col flex="0 1 150px">
-                            <Subtitlesection {...valueSubtitle[1]} />
+                            <SubtitleSection {...valueSubtitle[1]} />
                             <Button type="text" href="/" icon={<HomeOutlined/>}>
                                 Home
                             </Button>
@@ -83,7 +83,7 @@ export default function Rodape() {
                         <Col flex="1 1 auto" align={"center"}>
                             <figure style={{width: "5rem"}} onClick={() => window.scrollTo(0, 0)}>
                                 <img
-                                    src="./backtop.png"
+                                    src="/backtop.png"
                                     alt="voltar ao inicio da página"
                                     style={{width: "100%"}}
                                 />
@@ -93,8 +93,8 @@ export default function Rodape() {
                 </div>
             </Footer>
             <div className="rodape_name">
-              <span className="spansection">
-                Engenheiro Civil: Wedson dos Santos - CREA/SP: 5070620780
+              <span className="span-section">
+                Todos os direitos reservados © 2023 - Construsonho Engenharia.
               </span>
             </div>
         </Layout>

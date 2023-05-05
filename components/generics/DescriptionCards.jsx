@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Descriptioncards(props) {
+export default function DescriptionCards(props) {
     const {description} = props;
 
     return (

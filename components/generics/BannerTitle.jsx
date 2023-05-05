@@ -1,7 +1,7 @@
 import React from "react";
 import {Row, Col, Breadcrumb} from "antd";
 
-export default function Bannertitle(props) {
+export default function BannerTitle(props) {
     const {title, breadcrumbName} = props;
 
     return (
@@ -12,12 +12,12 @@ export default function Bannertitle(props) {
                 <Row justify={"center"} align={"center"}>
                     <Col flex="1 1 300px">
                         <p
-                            className="titlesection"
+                            className="title-section"
                         >
                             {title}
                         </p>
 
-                        <div className="underlaine__card"></div>
+                        <div className="underline__card"></div>
 
                         <Breadcrumb style={{padding: "20px"}}>
                             <Breadcrumb.Item>
@@ -31,7 +31,7 @@ export default function Bannertitle(props) {
                     <Col flex="1 1 300px">
                         <figure>
                             <img
-                                src="./img_titles.png"
+                                src="/img_titles.png"
                                 alt="imagem empresa"
                                 style={{width: "80%"}}
                             />

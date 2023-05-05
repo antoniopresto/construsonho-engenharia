@@ -1,7 +1,5 @@
 import React from "react";
-import Bannertitle from "../components/generics/Bannertitle";
-import Goals from "../components/Goals";
-import History from "../components/History";
+import BannerTitle from "../components/generics/BannerTitle";
 import Contact from "../components/several/Contact";
 
 export default function Gallery() {
@@ -12,7 +10,7 @@ export default function Gallery() {
 
     return (
         <>
-            <Bannertitle {...valueTitle} />
+            <BannerTitle {...valueTitle} />
             <Contact/>
         </>
     );
