@@ -6,9 +6,11 @@ import {MenuOutlined} from "@ant-design/icons";
 import React from "react";
 import Link from "next/link";
 import {Header} from "antd/lib/layout/layout";
+import {useRouter} from "next/router";
 
 export default function TopMenu() {
     const [useVisible, setVisible] = React.useState(false);
+    const router = useRouter();
 
     const showDrawer = () => {
         setVisible(true);
@@ -24,13 +26,14 @@ export default function TopMenu() {
                 <Row>
                     <Col flex="0 1 200px" style={{top: "10px"}}>
                         <div>
-                            <a href="/">
-                                <Image
-                                    src={logoPic}
-                                    alt="logotipo empresa"
-                                    style={{width: "50px"}}
-                                />
-                            </a>
+                            <Link href="/">
+                                    <Image
+                                        src={logoPic}
+                                        alt="logotipo empresa"
+                                        width={250}
+                                        height={50}
+                                    />
+                            </Link>
                         </div>
                     </Col>
 
@@ -49,15 +52,15 @@ export default function TopMenu() {
                             visible={useVisible}
                         >
                             <div style={{display: "flex", flexDirection: "column"}}>
-                                <Button type="text" href="/Home">
-                                    Home
-                                </Button>
-                                <Button type="text" href="/About">
-                                    Sobre
-                                </Button>
-                                {/*<Button type="text" href="/Gallery">
-                                    Galeria
-                                </Button>*/}
+                                <Link href="/">
+                                    <a>Home</a>
+                                </Link>
+                                <Link href="/About">
+                                    <a>Sobre</a>
+                                </Link>
+                                <Link href="/Projects">
+                                    <a>Projetos</a>
+                                </Link>
                             </div>
                         </Drawer>
                     </>
@@ -66,16 +69,23 @@ export default function TopMenu() {
                             mode="horizontal"
                             overflowedIndicator={<MenuOutlined/>}
                             style={{lineHeight: "64px", fontFamily: "Montserrat, sans-serif"}}
+                            activeKey={router.pathname}
                         >
-                            <Menu.Item key="home">
-                                <Link href="/Home"> Home </Link>
+                            <Menu.Item key="/">
+                                <a href="/">
+                                    <span> Home </span>
+                                </a>
                             </Menu.Item>
-                            <Menu.Item key="about">
-                                <Link href="/About"> Sobre </Link>
+                            <Menu.Item key="/About">
+                                <a href="/About">
+                                    <span> Sobre </span>
+                                </a>
                             </Menu.Item>
-                           {/* <Menu.Item key="gallery">
-                                <Link href="/Gallery"> Galeria </Link>
-                            </Menu.Item>*/}
+                            <Menu.Item key="/Projects">
+                                <a href="/Projects">
+                                    <span> Projetos </span>
+                                </a>
+                            </Menu.Item>
                         </Menu>
                     </Col>
                 </Row>

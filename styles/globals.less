@@ -36,6 +36,7 @@ figure {
 @text_sizes: 1rem;
 //cores
 @orange: #f37b20;
+@orange_two: #f15929;
 @black: #252626;
 @gray: #fafafa;
 
@@ -69,6 +70,16 @@ figure {
     h3, h4{
       font-weight: 700;
       color: black;
+    }
+  }
+
+  &__button-projects{
+    text-align: center;
+    padding-top: 2rem;
+
+    button{
+      color: @orange;
+      border-color: @orange_two;
     }
   }
 }
@@ -173,7 +184,7 @@ figure {
   opacity: 0;
   transition: all 0.5s;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .items {
@@ -294,7 +305,7 @@ figure {
   .big-menu {
     margin-top: 10px;
     right: 10px;
-    justify-content: end;
+    justify-content: flex-end;
     text-align: end;
     border-bottom: none;
   }

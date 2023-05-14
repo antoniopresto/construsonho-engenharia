@@ -11,6 +11,8 @@ import {
 } from "@ant-design/icons";
 import SubtitleSection from "../generics/SubtitleSection";
 import Link from "next/link";
+import Image from 'next/image';
+
 
 export default function Rodape() {
     const valueSubtitle = [
@@ -19,6 +21,8 @@ export default function Rodape() {
         {id: "2_rodape", text: "Redes Sociais"},
     ];
 
+    const year = new Date().getFullYear();
+
     return (
         <Layout className="rodape">
             <Footer>
@@ -26,10 +30,11 @@ export default function Rodape() {
                     <Row>
                         <Col flex="0 1 140px" className="rodape_figure">
                             <figure>
-                                <img
+                                <Image
                                     src="/logo.png"
                                     alt="logotipo empresa construsonho engenharia"
-                                    style={{width: "100%"}}
+                                    width={450}
+                                    height={200}
                                 />
                             </figure>
                         </Col>
@@ -69,23 +74,24 @@ export default function Rodape() {
                         </Col>
                         <Col flex="0 1 150px">
                             <SubtitleSection {...valueSubtitle[1]} />
-                            <Button type="text" href="/" icon={<HomeOutlined/>}>
-                                Home
-                            </Button>
-                            <Button type="text" href="/About" icon={<BankOutlined/>}>
-                                Sobre
-                            </Button>
-                            {/*<Button type="text" href="/Gallery" icon={<CameraOutlined/>}>*/}
-                            {/*    Galeria*/}
-                            {/*</Button>*/}
+                            <Link href="/">
+                                <Button type="text" icon={<HomeOutlined/>}> Home </Button>
+                            </Link>
+                            <Link href="/About">
+                                <Button type="text" icon={<BankOutlined/>}> Sobre </Button>
+                            </Link>
+                            <Link href="/Projects">
+                                <Button type="text" icon={<CameraOutlined/>}> Projetos </Button>
+                            </Link>
                         </Col>
 
                         <Col flex="1 1 auto" align={"center"}>
                             <figure style={{width: "5rem"}} onClick={() => window.scrollTo(0, 0)}>
-                                <img
+                                <Image
                                     src="/backtop.png"
                                     alt="voltar ao inicio da página"
-                                    style={{width: "100%"}}
+                                    width={100}
+                                    height={100}
                                 />
                             </figure>
                         </Col>
@@ -94,7 +100,7 @@ export default function Rodape() {
             </Footer>
             <div className="rodape_name">
               <span className="span-section">
-                Todos os direitos reservados © 2023 - Construsonho Engenharia.
+                Todos os direitos reservados © {year} - Construsonho Engenharia.
               </span>
             </div>
         </Layout>

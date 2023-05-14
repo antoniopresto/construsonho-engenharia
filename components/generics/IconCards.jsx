@@ -1,19 +1,19 @@
 import React from 'react';
 import {Card, Col} from 'antd';
 import DescriptionCards from "./DescriptionCards";
-
-const {Meta} = Card;
+import Image from 'next/image';
 
 export default function IconCards(props) {
-    const {subtitle, imgUrl, description, minHeight} = props;
+    const {subtitle, imgUrl, description} = props;
 
     return (
         <Col flex="1 1 290px">
             <Card
-                style={{background: "none", border: "none"}}
-                cover={<img alt={subtitle} src={imgUrl} height={200} style={{objectFit: "cover"}}/>}
+                style={{background: "none", textAlign: "center"}}
+                bordered={false}
+                cover={<Image alt={subtitle} src={imgUrl} height={200} width={300} objectFit="cover"/>}
             >
-                <div style={{paddingBottom: "1rem"}}>
+                <div style={{paddingBottom: "1rem", textAlign: "initial"}}>
                     <p className="subtitle-section">{subtitle}</p>
                     <div className="underline__card"/>
                 </div>

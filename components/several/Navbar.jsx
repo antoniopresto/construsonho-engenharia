@@ -4,7 +4,6 @@ import Link from "next/link";
 import {Header} from "antd/lib/layout/layout";
 import Image from "next/image";
 import logoPic from "../../public/logotitulo.png";
-import {resolveHref} from "next/dist/shared/lib/router/router";
 
 export default function Navbar() {
     //const [useLink, setLink] = React.useState("home");
@@ -36,11 +35,12 @@ export default function Navbar() {
                             width: "250px",
                         }}
                     >
-                        <a href="/Home">
-                            <img
+                        <a href="/">
+                            <Image
                                 src="/logotitulo.png"
                                 alt="logotipo empresa"
-                                style={{width: "80%"}}
+                                width={300}
+                                height={100}
                             />
                         </a>
                     </div>
@@ -59,15 +59,9 @@ export default function Navbar() {
                         visible={useVisible}
                     >
                         <div style={{display: "flex", flexDirection: "column"}}>
-                            <Button type="text" href="/Home">
-                                Home
-                            </Button>
-                            <Button type="text" href="/About">
-                                Sobre
-                            </Button>
-                            <Button type="text" href="/Gallery">
-                                Galeria
-                            </Button>
+                            <Link href="/"> Home </Link>
+                            <Link href="/About"> Sobre </Link>
+                            <Link href="/Projects"> Projetos </Link>
                         </div>
                     </Drawer>
                 </>
@@ -78,13 +72,13 @@ export default function Navbar() {
                         style={{lineHeight: "64px", fontFamily: "'Merriweather', serif"}}
                     >
                         <Menu.Item key="home">
-                            <Link href="/Home"> Home </Link>
+                            <Link href="/"> Home </Link>
                         </Menu.Item>
                         <Menu.Item key="about">
                             <Link href="/About"> Sobre </Link>
                         </Menu.Item>
-                        <Menu.Item key="gallery">
-                            <Link href="/Gallery"> Galeria </Link>
+                        <Menu.Item key="projects">
+                            <Link href="/Projects"> Projetos </Link>
                         </Menu.Item>
                     </Menu>
                 </Col>
