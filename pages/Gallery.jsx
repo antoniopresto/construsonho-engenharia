@@ -3,15 +3,15 @@ import BannerTitle from "../components/generics/BannerTitle";
 import Contact from "../components/several/Contact";
 
 export default function Gallery() {
-    const valueTitle = {
-        title: "Nossa Galeria",
-        breadcrumbName: "Galeria"
-    };
+  const valueTitle = {
+    title: "Nossa Galeria",
+    breadcrumbName: "Galeria",
+  };
 
-    return (
-        <>
-            <BannerTitle {...valueTitle} />
-            <Contact/>
-        </>
-    );
+  return (
+    <>
+      <BannerTitle {...valueTitle} />
+      <Contact />
+    </>
+  );
 }

@@ -1,72 +1,93 @@
-import React, {useState} from "react";
-import {Button, Card, Col, Row} from 'antd';
-import Image from "next/image";
+import React from "react";
+import { Button } from "antd";
 import Link from "next/link";
+import styled from "styled-components";
+import { Space } from "../Space";
+
+const Wrapper = styled.div`
+  @media screen and (min-width: 768px) {
+    min-width: 500px;
+  }
+`;
+
+const Item = styled.div`
+  width: calc(30% - 3px);
+
+  @media screen and (max-width: 767px) {
+    min-width: 28vw;
+  }
+
+  .Item__image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding: 10px;
+    padding-top: 45px;
+    width: 90%;
+    display: block;
+    margin: auto;
+    @media screen and (min-width: 768px) {
+      padding-top: 50px;
+    }
+  }
+
+  .Item__title {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+  }
+`;
+
+const projects = [
+  {
+    title: "Residencial",
+    imgUrl: "/residencial_1.png",
+  },
+  {
+    title: "Comercial",
+    imgUrl: "/store.png",
+  },
+  {
+    title: "Empresarial",
+    imgUrl: "/company.png",
+  },
+];
 
 export default function TypesProjects(props) {
+  const { filter } = props;
 
-    const {filter} = props;
+  return (
+    <section className="bg__white flex">
+      <div className="container">
+        <Space />
+        <Space />
 
-    const projects = [
-        {
-            title: "Residencial",
-            imgUrl: "/residencial_1.png"
-        },
-        {
-            title: "Comercial",
-            imgUrl: "/store.png"
-        },
-        {
-            title: "Empresarial",
-            imgUrl: "/company.png"
-        },
-    ];
+        <Wrapper className={"flex between"}>
+          {projects.map((item, key) => {
+            return (
+              <Item key={key}>
+                <span
+                  className={"Item__image"}
+                  style={{ backgroundImage: `url("${item.imgUrl}");` }}
+                />
 
-    //const filterProjects = ['todos', 'residencial', 'comercial', 'empresarial'];
+                <span className={"Item__title"}>{item.title}</span>
+              </Item>
+            );
+          })}
+        </Wrapper>
 
-    //const [selectedFilter, useSelectedFilter] = useState(filterProjects[0])
+        <Space />
 
-    return (
-        <section className="bg__container bg__white">
-            <div className="container">
-                <div className="container__wrapper">
-                    <Row style={{rowGap: "1rem", columnGap: "1rem"}}>
-                        {projects.map((items, key) => {
-                            return (
-                                <Col flex="1 1 200px" key={key}>
-                                    <Card
-                                        hoverable={false}
-                                        cover={
-                                            <Image
-                                                alt={items.title}
-                                                src={items.imgUrl}
-                                                height={100}
-                                                width={150}
-                                            />}
-                                        style={{textAlign: "center", paddingTop: "1.5rem", background: "none"}}
-                                    >
-
-                                        <p className="span-section container__wrapper__title-card">
-                                            {items.title}
-                                        </p>
-
-                                    </Card>
-                                </Col>
-                            )
-                        })}
-                    </Row>
-
-                    {
-                        filter ? null :
-                            <div className="container__wrapper__button-projects">
-                                <Link href="/Projects">
-                                    <Button> CONHEÇA NOSSOS PROJETOS </Button>
-                                </Link>
-                            </div>
-                    }
-
-                </div>
-            </div>
-        </section>
-    );
+        {filter ? null : (
+          <div className="container__wrapper__button-projects">
+            <Link href="/Projects">
+              <Button> CONHEÇA NOSSOS PROJETOS </Button>
+            </Link>
+          </div>
+        )}
+      </div>
+    </section>
+  );
 }

@@ -1,9 +1,8 @@
-
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -46,38 +45,44 @@ figure {
   max-width: 950px;
 }
 
+section {
+  &.bg__white {
+    background-color: white;
+  }
+}
+
 .container__wrapper {
   padding: 10px;
 
-  &__advantage-image{
-    h5{
+  &__advantage-image {
+    h5 {
       position: absolute;
       bottom: 5px;
       font-weight: bold;
       background: #fafafa;
       padding: 0.2rem 0.5rem;
 
-      span{
+      span {
         color: @orange;
         font-style: italic;
         font-size: medium;
       }
-
     }
   }
 
-  &__advantage-text{
-    h3, h4{
+  &__advantage-text {
+    h3,
+    h4 {
       font-weight: 700;
       color: black;
     }
   }
 
-  &__button-projects{
+  &__button-projects {
     text-align: center;
     padding-top: 2rem;
 
-    button{
+    button {
       color: @orange;
       border-color: @orange_two;
     }
@@ -89,7 +94,11 @@ figure {
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 40px 20px;
+  padding: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 40px 20px;
+  }
 
   &.bg__white {
     background-image: url(/bg_banner.png);
@@ -226,22 +235,25 @@ figure {
   transition: all 0.4s;
 }
 
-.container__cards:hover .overlay, .container__cards:focus .overlay {
+.container__cards:hover .overlay,
+.container__cards:focus .overlay {
   opacity: 1;
 }
 
-.container__cards:hover .overlay .head, .container__cards:focus .overlay .head {
+.container__cards:hover .overlay .head,
+.container__cards:focus .overlay .head {
   transform: translateY(10px);
 }
 
-.container__cards:hover .overlay hr, .container__cards:focus .overlay hr {
+.container__cards:hover .overlay hr,
+.container__cards:focus .overlay hr {
   width: 75px;
   transition-delay: 0.3s;
 }
 
 //ICONCARDS
-.ant-card-body{
-  padding: 20px 10px!important;
+.ant-card-body {
+  padding: 20px 10px !important;
 }
 
 .icon-cards_description {
