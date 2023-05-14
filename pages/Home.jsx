@@ -4,6 +4,7 @@ import Services from "../components/Services";
 import Contact from "../components/several/Contact";
 import React from "react";
 import Advantage from "../components/Advantage";
+import TypesProjects from "../components/several/TypesProjects";
 
 export default function Home() {
 
@@ -12,6 +13,7 @@ export default function Home() {
             <Banner/>
             <Company/>
             <Services/>
+            <TypesProjects filter={false}/>
             <Advantage/>
             <Contact/>
         </>

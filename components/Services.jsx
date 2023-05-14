@@ -1,7 +1,6 @@
 import React from "react";
 import TitleSection from "./generics/TitleSection";
 import {Row} from "antd";
-import Cards from "./generics/Cards";
 import IconCards from "./generics/IconCards";
 
 export default function Services() {
@@ -15,7 +14,7 @@ export default function Services() {
         {
             id: "services_00",
             subtitle: "Laudos, avaliações e serviços",
-            imgUrl: "/services_0.png",
+            imgUrl: "/services_00.png",
             description: [
                 "Vistorias, laudos técnicos e perícias;",
                 "Supervisão e acompanhamento de obras;",
@@ -27,7 +26,7 @@ export default function Services() {
         {
             id: "services_11",
             subtitle: "Serviços de Empreiteira",
-            imgUrl: "/services_1.png",
+            imgUrl: "/services_11.png",
             description: [
                 "Construção de Edificação Empresarial e/ou Residencial;",
                 "Reformas em geral;",

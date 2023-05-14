@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from "react";
-import {Button, Col, Row} from "antd";
+import {Col, Row} from "antd";
 import TitleSection from "./generics/TitleSection";
 import DescriptionCards from "./generics/DescriptionCards";
 import {useWidth} from "./hooks/useWidth";
+import Image from 'next/image';
 
 export default function Advantage() {
     const widthSize = useWidth();
@@ -10,7 +11,6 @@ export default function Advantage() {
 
     useEffect(() => {
         setIsMobile(widthSize.width < 541)
-        console.log(isMobile, widthSize.width)
     }, [widthSize.width])
 
     const valueTitle = {
@@ -40,20 +40,18 @@ export default function Advantage() {
                                 <figure>
                                     {
                                         isMobile ?
-                                            <img
+                                            <Image
                                                 src="/ceo_1.png"
                                                 alt="Wedson dos Santos - Engenheiro Civil"
-                                                style={{
-                                                    width: "12.6rem"
-                                                }}
+                                                width={230}
+                                                height={250}
                                             />
                                             :
-                                            <img
+                                            <Image
                                                 src="/ceo_2.png"
                                                 alt="Wedson dos Santos - Engenheiro Civil"
-                                                style={{
-                                                    width: "17.2rem"
-                                                }}
+                                                width={260}
+                                                height={400}
                                             />
                                     }
                                 </figure>

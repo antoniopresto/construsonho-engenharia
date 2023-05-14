@@ -1,6 +1,7 @@
 import React from "react";
 import {Button, Col, Form, Input, Row, Select} from "antd";
 import TitleSection from "../generics/TitleSection";
+import Image from 'next/image';
 
 const {Option} = Select;
 
@@ -14,7 +15,6 @@ export default function Contact() {
     };
 
     const onFinish = (values) => {
-        //console.log('Success:', values);
         encodeValues(values)
     };
 
@@ -110,10 +110,11 @@ export default function Contact() {
                         </Col>
                         <Col flex="1 1 250px">
                             <figure>
-                                <img
+                                <Image
                                     src="/contact.png"
                                     alt="imagem de contato"
-                                    style={{width: "100%"}}
+                                    width={400}
+                                    height={300}
                                 />
                             </figure>
                         </Col>

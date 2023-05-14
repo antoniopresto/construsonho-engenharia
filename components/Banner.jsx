@@ -1,5 +1,6 @@
 import React from "react";
 import {Row, Col} from "antd";
+import Image from 'next/image';
 
 export default function Banner() {
     return (
@@ -17,10 +18,11 @@ export default function Banner() {
                         style={{textAlign: "center", alignSelf: "center"}}
                     >
                         <figure>
-                            <img
+                            <Image
                                 src="/banner.png"
                                 alt="imagem de banner"
-                                style={{width: "70%"}}
+                                width={260}
+                                height={260}
                             />
                         </figure>
                     </Col>
